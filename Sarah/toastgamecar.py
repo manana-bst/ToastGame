@@ -1,6 +1,6 @@
-from turtle import Screen
+from turtle import Screencreen
 import pygame
-import os
+from sys import exit
 
 pygame.init() 
 
@@ -27,7 +27,7 @@ speed = 2
 score = 0
 
 # sprite
-class Vehicle(pygame.sprite.Sprite):
+class Toast(pygame.sprite.Sprite):
      def __init__(self, image, x, y):
           pygame.sprite.Sprite.__init__(self)
           self.image = pygame.image.load('graphics/sneaky-toast-walk.gif')
